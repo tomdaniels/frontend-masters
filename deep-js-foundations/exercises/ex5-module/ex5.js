@@ -21,7 +21,6 @@ addProject("client features");
 addProject("overhead");
 addProject("backlog");
 
-
 // **************************
 
 function initUI() {
@@ -46,6 +45,7 @@ function submitNewWorkEntry() {
 		$workEntryDescription[0].focus();
 		return;
 	}
+
 
 	$workEntryDescription.val("");
 	$workEntryTime.val("");
