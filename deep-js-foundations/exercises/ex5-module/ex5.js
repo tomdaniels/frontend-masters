@@ -47,8 +47,6 @@ function submitNewWorkEntry() {
 		return;
 	}
 
-	remove me ;)
-
 	$workEntryDescription.val("");
 	$workEntryTime.val("");
 	addWorkToProject(Number(projectId),description,Number(minutes));
