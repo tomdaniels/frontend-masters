@@ -72,6 +72,14 @@ function addProjectSelection(projectEntryData) {
 	$workEntrySelectProject.append($option);
 }
 
+function findProjectEntry(projectId) {
+	for (let i = 0; i < projects.length; i++) {
+		if (projects[i].id === projectId) {
+			return projects[i];
+		}
+	}
+}
+
 function addWorkToProject(projectId,description,minutes) {
 	projects.time = (projects.time || 0) + minutes;
 
@@ -93,14 +101,6 @@ function addWorkToProject(projectId,description,minutes) {
 	addWorkEntryToList(projectEntryData,workEntryData);
 	updateProjectTotalTime(projectEntryData);
 	updateWorkLogTotalTime();
-}
-
-function findProjectEntry(projectId) {
-	for (let i = 0; i < projects.length; i++) {
-		if (projects[i].id === projectId) {
-			return projects[i];
-		}
-	}
 }
 
 function addWorkEntryToList(projectEntryData,workEntryData) {
