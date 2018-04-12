@@ -7,7 +7,7 @@ function initUI() {
 	$totalTime = $("[rel*=js-total-work-time]");
 	$projectList = $("[rel*=js-project-list]");
 
-	var handleClick = function(){
+	function handleclick(){
 		var projectId = $workEntrySelectProject.val();
 		var description = $workEntryDescription.val();
 		var minutes = $workEntryTime.val();
