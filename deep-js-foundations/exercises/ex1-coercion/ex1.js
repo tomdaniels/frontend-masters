@@ -152,7 +152,6 @@ function formatTime(time) {
 	return `${hours}:${minutes}`;
 }
 
-
 // **************************
 
 var projectTemplate = "<div class='project-entry'><h3 class='project-description' rel='js-project-description'></h3><ul class='work-entries' rel='js-work-entries'></ul><span class='work-time' rel='js-work-time'></span></div>";
