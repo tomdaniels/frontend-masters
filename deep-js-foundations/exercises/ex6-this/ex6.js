@@ -31,7 +31,6 @@ var Helpers = {
 	}
 };
 
-ghjklds;
 
 var UI = setupUI();
 UI.init();
